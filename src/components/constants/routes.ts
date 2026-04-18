@@ -1,0 +1,78 @@
+export const ROUTES = {
+  auth: {
+    welcome: "/welcome",
+    signin: "/login",
+    signup: "/signup",
+    emailVerification: "/email-verification",
+    forgot: "/forget-password",
+    reset: "/reset-password",
+    verify: "/verify",
+  },
+  dashboard: {
+    home: "/dashboard",
+    userManagement: "/user-management",
+    advisors: "/advisors",
+    challengeManagement: "/challenge-managment",
+    contentManagement: {
+      nutrition: "/content-management",
+      workouts: "/content-management/workouts",
+      dailyworkout: "/content-management/dailyworkout",
+      addworkout: "/content-management/addworkout",
+      addFood: "/content-management/add-food-nutrtion",
+      workoutdetails: "/content-management/workoutdetails",
+    },
+    announcements: "/announcements",
+    live: "/live",
+    settings: "/settings",
+  },
+  panel: {
+    dashboard: "/dashboard",
+    userManagement: "/user-management",
+    advisors: {
+      home: "/advisors",
+      add: "/advisors/addAdvisors",
+      details: "/advisors/details",
+    },
+    contentManagement: {
+      home: "/content-management",
+      nutrition: "/content-management/add-food-nutrtion",
+      workouts: "/content-management/workouts",
+      dailyworkout: "/content-management/dailyworkout",
+      addworkout: "/content-management/addworkout",
+      workoutdetails: "/content-management/workoutdetails",
+    },
+    challengeManagement: {
+      home: "/challenge-managment",
+      active: "/challenge-managment/activechallengs",
+    },
+    announcements: "/announcements",
+    notifications: "/notifications",
+    settings: "/settings",
+  },
+  userManagement: {
+    home: "/user-management",
+    userDetails: "/user-management/user-details-info",
+    userEdit: "/user-management/user-edit",
+    userInfoEdit: "/user-management/user-info-edit",
+    bodyMetrics: "/user-management/user-body-metrics",
+    progressPictures: "/user-management/progress-pictures",
+    progressTrackers: "/user-management/progress-trackers",
+    progressVid: "/user-management/progress-Vid",
+    nutritionMacro: "/user-management/user-nutritionMacro",
+    weeklySummaries: "/user-management/weekly-summaries",
+    workoutPlans: "/user-management/workout-plans",
+    metricGraphs: "/user-management/body-metricGraphs",
+  },
+  public: {
+    home: "/",
+    digiMarket: {
+      all: "/digi-market/all",
+      books: "/digi-market/books",
+      photos: "/digi-market/photos",
+      videos: "/digi-market/videos",
+    },
+    globalRanking: "/global-ranking",
+  },
+} as const;
+
+export default ROUTES;
